@@ -96,7 +96,7 @@ class App extends Component {
                 key={item}
                 id={item}
                 onClick={() => this.handleMoveSpeck(`${row}_${index}`)}
-            >{item !== 0 && item }</span>
+            ><span>{item !== 0 && item }</span></span>
         ));
 
 

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -12,6 +15,7 @@
   height: 150px;
   padding: 20px;
   color: white;
+  width: 100%;
 }
 
 .App-title {
@@ -32,25 +36,35 @@
 }
 
 .specks {
-  width: 300px;
-  padding: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-container {
   display: flex;
+  width: 100%;
 }
 
 .flex-container>span {
+  width: 50px;
+  height: 50px;
   background-color: black;
   color: white;
-  margin: 10px;
+  margin:  1px 0 1px 1px;
   padding:20px;
   font-size: 30px;
-  align-items: center;
-  justify-content: center;
-  flex: 1 0 33.3333%;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  flex: 1 1 25%;
+  display: flex;
+}
+
+.flex-container :hover {
+  background-color: #222;
+}
+
+.flex-container > span > span {
+  margin: auto;
 }
 
 .button {
